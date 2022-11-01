@@ -22,13 +22,13 @@ namespace Array___Object__Big_O_Notation
 
             #region task2
                
-            int countPositive=0, countNegative=0;
-            int[] nums = {-5,-4,-3,6,7};
+             int countPositive=0, countNegative=0,countZero=0;
+            int[] nums = {-5,-4,-3,0,6,7};
             for(int i=0;i<nums.Length;i++)
             {
                     if(nums[i]==0)
             {
-                Console.WriteLine("0 is neither positive nor negative");
+                countZero++;
             }
                 if(nums[i]>0)
                 {
@@ -44,6 +44,7 @@ namespace Array___Object__Big_O_Notation
             }
             Console.WriteLine("There are "+countPositive+" positive numbers in this array");
              Console.WriteLine("There are "+countNegative+" negative numbers in this array");
+             Console.WriteLine("There is "+countZero+" neither positive nor negative number" );
 
             #endregion
 
